@@ -1,0 +1,34 @@
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.burger>div {
+    background-color: #000;
+    height: 2px;
+    width: 30px;
+    margin-top: 0.4rem;
+}
+
+.burger>div:nth-child(3) {
+    width: 20px;
+}
+
+.navbar>.navbar-nav {
+    flex-direction: unset;
+    justify-content: space-evenly;
+}
+
+.navbar>.navbar-brand {
+    font-size: calc(1em + 1vw);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar>.navbar-brand>p {
+    font-size: 0.475rem;
+}
+
+.navbar>.navbar-brand>p>span {
+    display: block;
+}

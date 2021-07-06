@@ -1,0 +1,46 @@
+.bg {
+    height: 75vh;
+    background-image: url('../../../img/main1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.bg>svg {
+    position: absolute;
+}
+
+.bg>svg:nth-child(1) {
+    left: 2%;
+    top: 50%;
+}
+
+.bg>svg:nth-child(2) {
+    right: 2%;
+    top: 50%;
+}
+
+.dots {
+    position: absolute;
+    display: flex;
+    bottom: 3%;
+    right: 50%;
+}
+
+.dots>div {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-right: 1rem;
+}
+
+.dots>div:nth-child(5) {
+    margin-right: unset;
+}
+
+.dots>.active__dot {
+    width: 18px;
+    border-radius: 30%;
+}
