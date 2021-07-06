@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap'
 import Navigation from '../components/main/navbar/navbar'
 import MainPage from '../components/main/mainPage/mainPage'
 import Categories from '../components/main/categories/categories'
+import About from '../components/main/about/about'
 
 function Main() {
     return (
@@ -14,6 +15,7 @@ function Main() {
             <Container>
                 <Categories />
             </Container>
+            <About />
         </>
     )
 }
