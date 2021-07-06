@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Row, Navbar, Nav } from 'react-bootstrap'
+import { Navbar, Nav } from 'react-bootstrap'
 import { Cart, Heart, Instagram, Facebook } from 'react-bootstrap-icons'
 import './index.css'
 
@@ -18,7 +18,7 @@ function Navigation() {
             <p className="mt-3 d-none d-lg-block font-weight-bold"> +7 (495) 150 - 14 - 77</p>
             <button><Heart className="ml-md-5" /></button>
             <Nav.Link><Cart className="ml-md-3" /></Nav.Link>
-            <Nav className="w-100 d-none d-md-flex">
+            <Nav className="w-100 d-none d-lg-flex">
                 <Nav.Link href="#features">Features</Nav.Link>
                 <Nav.Link href="#pricing">Pricing</Nav.Link>
                 <Nav.Link href="#features">Features</Nav.Link>

@@ -1,0 +1,18 @@
+.categories__container {
+    display: flex;
+    margin-top: 4rem;
+}
+
+.categories__container>.row {
+    margin: 0;
+    margin-bottom: 5rem;
+}
+
+
+.categories__container>.row:nth-child(1)>.col-md-12 {
+    margin-bottom: 5rem;
+}
+
+.categories__container>.row:nth-child(2)>.col-md-6 {
+    margin-bottom: 5rem;
+}
