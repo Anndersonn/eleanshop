@@ -5,7 +5,7 @@ import './index.css'
 
 function ContactForm() {
     return (
-        <div className="text-center mb-3 p-5 form__wrp">
+        <div className="text-center mb-5 p-5 form__wrp">
             <Image className="mb-5" src={formIcon} />
             <h4 className="mb-5">ЗАПИСАТЬСЯ НА ПРИМЕРКУ В ШОУРУМЕ</h4>
             <Form>

@@ -1,0 +1,7 @@
+.comments__info {
+    justify-content: space-between;
+}
+
+.comments__text {
+    border: 2px dotted gray;
+}
