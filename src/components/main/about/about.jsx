@@ -8,10 +8,10 @@ import './index.css'
 function About() {
     return (
         <Container fluid>
-            <div className="text-center">
-                <h4 className="card-title">О БРЕНДЕ</h4>
+            <div className="text-center mb-5">
+                <h4 className="card-title ">О БРЕНДЕ</h4>
             </div>
-            <Row className="position-relative p-3">
+            <Row className="position-relative p-3 mb-5">
                 <Col lg={6} sm={12}>
                     <Image src={aboutPhoto} className="about__photo" />
                     <Image className="vector position-absolute" src={vector} />

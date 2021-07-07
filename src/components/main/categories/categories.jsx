@@ -6,7 +6,7 @@ import './index.css';
 function Categories() {
     return (
         <>
-            <div className=" categories__container d-md-flex mb-sm-1">
+            <div className=" categories__container d-md-flex  mb-sm-1">
                 <Row sm={12} md={5} >
                     <Col sm={12} md={12} className="mb-5">
                         <div>Новинки</div>
