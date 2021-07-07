@@ -49,6 +49,9 @@ function Comments() {
                     </Col>
                 </Col>
             </Row>
+            <Col lg={12} xs={8} className="d-flex justify-content-center mx-auto mt-5 mb-5 p-0">
+                <button className="comments__btn px-4 px-lg-5 py-2">СМОТРЕТЬ ВСЕ</button>
+            </Col>
         </>
     );
 }

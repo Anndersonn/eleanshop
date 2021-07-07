@@ -27,8 +27,8 @@ function ContactForm() {
                     <Form.Group as={Col} lg={10} md={12} className="p-0 text__area m-md-auto mb-2">
                         <Form.Control className=" border-dark rounded-0 " rows="4" as="textarea" />
                     </Form.Group>
-                    <Col lg={2} xs={3} className="mt-3 mt-lg-0 p-0 h-100 mx-auto">
-                        <button type="submit" className="border border-dark p-4 w-100">Submit</button>
+                    <Col lg={2} xs={5} className="mt-3 mt-lg-0 p-0 h-100 mx-auto">
+                        <button type="submit" className="border border-dark py-2 p-md-4 w-100">Submit</button>
                     </Col>
                 </Row>
                 <Row>

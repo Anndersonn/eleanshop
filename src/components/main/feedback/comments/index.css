@@ -2,6 +2,39 @@
     justify-content: space-between;
 }
 
+.comments__info>p {
+    font-size: calc(60% + 0.5vw)
+}
+
 .comments__text {
     border: 2px dotted gray;
+    font-size: calc(60% + 0.5vw);
+}
+
+.comments__btn {
+    position: relative;
+    padding: 0.4rem 6.5rem !important;
+    border: 1px solid #D7B494;
+    color: #D7B494;
+    font-size: calc(14px + (14 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.comments__btn::after {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color: #D7B494;
+    position: absolute;
+    top: 50%;
+    right: -7%;
+}
+
+.comments__btn::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color: #D7B494;
+    position: absolute;
+    top: 50%;
+    left: -7%;
 }

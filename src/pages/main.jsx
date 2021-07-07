@@ -8,6 +8,7 @@ import ShowRoom from '../components/main/showRoom/showRoom'
 import ContactForm from '../components/main/form/form'
 import Feedback from '../components/main/feedback/feedback'
 import Comments from '../components/main/feedback/comments/comments'
+import Socials from '../components/main/socials/socials'
 
 function Main() {
     return (
@@ -25,6 +26,7 @@ function Main() {
                 <ContactForm />
                 <Feedback />
                 <Comments />
+                <Socials />
             </Container>
         </>
     )
