@@ -1,0 +1,11 @@
+.footer__container {
+    justify-content: space-evenly;
+}
+
+.footer__input {
+    border: 1px solid #D7B494 !important;
+}
+
+.custom-control-input {
+    display: none;
+}
