@@ -3,17 +3,34 @@ button {
     border: none;
 }
 
+/* BURGER */
 .burger>div {
     background-color: #000;
-    height: 2px;
+    height: 1px;
     width: 30px;
     margin-top: 0.4rem;
+    transition: .2s linear;
 }
 
 .burger>div:nth-child(3) {
     width: 20px;
 }
 
+.close>div:nth-child(3) {
+    display: none;
+}
+
+.close>div:nth-child(2) {
+    transform: rotate(-45deg);
+    margin-top: unset;
+}
+
+.close>div:nth-child(1) {
+    transform: rotate(45deg);
+    margin-top: unset;
+}
+
+/* NAVBAR */
 .navbar>.navbar-nav {
     flex-direction: unset;
     justify-content: space-evenly;
@@ -31,4 +48,23 @@ button {
 
 .navbar>.navbar-brand>p>span {
     display: block;
+}
+
+/* COLOR SWITCH */
+
+
+
+
+.color__switch>a,
+.color__switch>p,
+.color__switch>button,
+.color__switch>.nav__wrp>.navigation__links {
+    color: #fff !important;
+    fill: #fff !important;
+    z-index: 100;
+}
+
+.color__switch>.burger>div {
+    background-color: #fff;
+
 }
