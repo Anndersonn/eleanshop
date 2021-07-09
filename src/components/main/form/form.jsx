@@ -24,7 +24,7 @@ function ContactForm() {
                 </Row>
                 <Row className="mb-5">
 
-                    <Form.Group as={Col} lg={10} md={12} className="p-0 text__area m-md-auto mb-2">
+                    <Form.Group as={Col} lg={10} md={12} className="p-0  m-md-auto mb-2" style={{ resize: 'none' }}>
                         <Form.Control className=" border-dark rounded-0 " rows="4" as="textarea" />
                     </Form.Group>
                     <Col lg={2} xs={5} className="mt-3 mt-lg-0 p-0 h-100 mx-auto">

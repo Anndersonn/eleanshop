@@ -5,6 +5,8 @@ import feedbackArrow from '../../../img/feedbackarrow.svg'
 import './index.css'
 
 function Feedback() {
+
+
     return (
         <div className="text-center pb-4 position-relative">
 
@@ -33,7 +35,7 @@ function Feedback() {
                     <div>Новинки</div>
                 </Col>
             </Row>
-            <div className="dots">
+            <div className="feedback__dots">
                 <div></div>
                 <div></div>
                 <div></div>

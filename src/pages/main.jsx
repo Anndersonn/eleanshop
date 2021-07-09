@@ -11,13 +11,15 @@ import Comments from '../components/main/feedback/comments/comments'
 import Socials from '../components/main/socials/socials'
 import Footer from '../components/main/footer/footer'
 
+import { sliderData } from '../components/helpers/imgSlider'
+
 function Main() {
     return (
         <>
             <Container>
                 <Navigation />
             </Container>
-            <MainPage />
+            <MainPage sliderImg={sliderData} />
             <Container>
                 <Categories />
             </Container>

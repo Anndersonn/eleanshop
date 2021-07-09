@@ -35,7 +35,7 @@ function Navigation() {
                 </Nav>
 
             </Navbar>
-            {!burger ? <Sidebar /> : ''}
+            <Sidebar burger={burger} />
         </>
     )
 }
