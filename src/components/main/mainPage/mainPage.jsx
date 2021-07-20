@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './index.css'
 
-function MainPage({ sliderImg, autoPlayTime = 3000 }) {
+function MainPage({ sliderImg, autoPlayTime = 15000 }) {
 
     const [currentSlide, setCurrentSlide] = useState(0)
 
@@ -18,7 +18,7 @@ function MainPage({ sliderImg, autoPlayTime = 3000 }) {
     }, [currentSlide])
 
     return (
-        <div className="wrp d-flex position-relative">
+        <div className="wrp d-flex position-relative" id="main">
             {sliderImg.map(({ slider }, index) =>
                 <div key={index} className="bg" style={{ backgroundImage: `url(${slider})`, marginLeft: index === 0 ? `-${currentSlide * 100}%` : 0 }}>
                 </div>

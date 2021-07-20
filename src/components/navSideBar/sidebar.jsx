@@ -1,79 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import './index.css'
 import { Row, Col, Container, Nav } from 'react-bootstrap';
-
-
-const array = [
-    {
-        categories: 'Категории',
-        links: [
-            {
-                link: 'Смокинг'
-            },
-            {
-                link: 'Костюмы'
-            }
-        ],
-    },
-
-    {
-        categories: 'Коллекции',
-        links: [
-            {
-                link: 'Смокинг'
-            },
-            {
-                link: 'Костюмы'
-            }
-        ],
-
-    },
-    {
-        categories: 'Коллекции',
-        links: [
-            {
-                link: 'Смокинг'
-            },
-            {
-                link: 'Костюмы'
-            }
-        ],
-
-    },
-    {
-        categories: 'Коллекции',
-        links: [
-            {
-                link: 'Смокинг'
-            },
-            {
-                link: 'Костюмы'
-            }
-        ],
-
-    },
-    {
-        categories: 'Коллекции',
-        links: [
-            {
-                link: 'Смокинг'
-            },
-            {
-                link: 'Костюмы'
-            }
-        ],
-
-    },
-
-
-];
-
-
+import { array } from '../helpers/navSideBar'
+import { useHistory, useLocation } from 'react-router-dom';
 
 
 function Sidebar({ burger }) {
 
     const [showNavbar, setShownavbar] = useState({})
+
+
 
     const toggleComment = index => {
         setShownavbar(prevShowNavbar => ({
@@ -81,6 +17,9 @@ function Sidebar({ burger }) {
             [index]: !prevShowNavbar[index]
         }));
     };
+
+    const history = useHistory()
+
 
 
     return (
@@ -91,7 +30,7 @@ function Sidebar({ burger }) {
                         {array.map((item, index) =>
                             <div key={index}>
                                 <Nav.Link onClick={() => toggleComment(index)} className={showNavbar[index] ? "toggle__nav position-relative h3 border-bottom" : "active position-relative h3 border-bottom"}>{item.categories}</Nav.Link>
-                                {item.links && item.links.map((test, j) => showNavbar[index] ? <Nav.Link key={j} href="#features">{test.link}</Nav.Link> : '')}
+                                {item.links && item.links.map((nav, j) => showNavbar[index] ? <Nav.Link onClick={() => history.push(nav.path)} key={j} href={nav.hash}>{nav.link}</Nav.Link> : '')}
                             </div>
                         )}
                     </Nav>

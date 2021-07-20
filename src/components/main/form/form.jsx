@@ -5,7 +5,7 @@ import './index.css'
 
 function ContactForm() {
     return (
-        <div className="text-center mb-5 p-5 form__wrp">
+        <div className="text-center mb-5 p-5 form__wrp" id="contactform">
             <Image className="mb-5" src={formIcon} />
             <h4 className="mb-5">ЗАПИСАТЬСЯ НА ПРИМЕРКУ В ШОУРУМЕ</h4>
             <Form>
@@ -24,8 +24,8 @@ function ContactForm() {
                 </Row>
                 <Row className="mb-5">
 
-                    <Form.Group as={Col} lg={10} md={12} className="p-0  m-md-auto mb-2" style={{ resize: 'none' }}>
-                        <Form.Control className=" border-dark rounded-0 " rows="4" as="textarea" />
+                    <Form.Group as={Col} lg={10} md={12} className="p-0  m-md-auto mb-2" >
+                        <Form.Control className=" border-dark rounded-0 " rows="4" as="textarea" style={{ resize: 'none' }} />
                     </Form.Group>
                     <Col lg={2} xs={5} className="mt-3 mt-lg-0 p-0 h-100 mx-auto">
                         <button type="submit" className="border border-dark py-2 p-md-4 w-100">Submit</button>

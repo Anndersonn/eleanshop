@@ -8,7 +8,7 @@ function Feedback() {
 
 
     return (
-        <div className="text-center pb-4 position-relative">
+        <div className="text-center pb-4 position-relative" id='feedback'>
 
             <h4 className="mb-5">ЗАПИСАТЬСЯ НА ПРИМЕРКУ В ШОУРУМЕ</h4>
             <Row xs={12} className='m-auto h-100 position-relative'>

@@ -6,7 +6,7 @@ import insta from '../../../img/insta2.png'
 
 function Socials() {
     return (
-        <div className="text-center mb-5">
+        <div className="text-center mb-5" id="socials">
             <h3 className=" mb-4">МЫ В INSTAGRAM</h3>
             <Row xs={12} className='m-auto h-100 position-relative'>
                 <Col xs={12} md={3} lg={2} className="mx-auto text-left p-0 d-md-block d-flex flex-column">

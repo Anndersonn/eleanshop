@@ -5,7 +5,7 @@ import './index.css'
 function Comments() {
     return (
         <>
-            <Row className="flex-center ">
+            <Row className="flex-center " id="comments">
                 <Col lg={6} md={10} className="d-flex mx-auto mt-5">
                     <Image src="#" width={40} height={40} roundedCircle className="bg-dark" />
                     <Col xs={10} className="m-auto">

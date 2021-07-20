@@ -8,7 +8,7 @@ import './index.css'
 function About() {
     return (
         <Container fluid>
-            <div className="text-center mb-5">
+            <div className="text-center mb-5" id='blog'>
                 <h4 className="card-title ">О БРЕНДЕ</h4>
             </div>
             <Row className="position-relative p-3 mb-5">
