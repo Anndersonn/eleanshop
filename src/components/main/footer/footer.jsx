@@ -5,7 +5,7 @@ import { Instagram, Facebook } from 'react-bootstrap-icons';
 
 function Footer() {
     return (
-        <Container fluid className="footer__container d-flex mb-5 flex-lg-row flex-column" id="footer">
+        <Container fluid className="footer__container d-flex flex-lg-row flex-column" id="footer">
             <Row xs={12} className="m-0 px-3">
                 <Col className="px-0">
                     <h2 href="#home">Elean</h2>

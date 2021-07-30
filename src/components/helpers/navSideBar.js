@@ -3,34 +3,42 @@ export const array = [
         categories: 'Категории',
         links: [
             {
+                id: '1',
                 link: 'Юбки',
                 path: '/clothes/Юбки'
             },
             {
+                id: '2',
                 link: 'Смокинг',
                 path: '/clothes/Смокинг'
             },
             {
+                id: '3',
                 link: 'Костюмы',
                 path: '/clothes/Костюмы'
             },
             {
+                id: '4',
                 link: 'Аксессуары',
                 path: '/clothes/Аксессуары'
             },
             {
+                id: '5',
                 link: 'Брюки',
                 path: '/clothes/Брюки'
             },
             {
+                id: '6',
                 link: 'Блузы',
                 path: '/clothes/Блузы'
             },
             {
+                id: '7',
                 link: 'Платья',
                 path: '/clothes/Платья'
             },
             {
+                id: '8',
                 link: 'Топы и жилеты',
                 path: '/clothes/Топы и жилеты'
             },
@@ -41,15 +49,19 @@ export const array = [
         categories: 'Коллекции',
         links: [
             {
+                id: '9',
                 link: 'Осень-зима 20-21'
             },
             {
+                id: '10',
                 link: 'Вечерние комплекты'
             },
             {
+                id: '11',
                 link: 'Предзаказ'
             },
             {
+                id: '12',
                 link: 'Свадьба и выпускной'
             },
         ],
@@ -59,21 +71,27 @@ export const array = [
         categories: 'Покупателям',
         links: [
             {
+                id: '13',
                 link: 'Доставка'
             },
             {
+                id: '14',
                 link: 'Акции'
             },
             {
+                id: '15',
                 link: 'Возврат'
             },
             {
+                id: '16',
                 link: 'Размерная таблица'
             },
             {
+                id: '17',
                 link: 'Примерка'
             },
             {
+                id: '18',
                 link: 'Оптовым покупателям'
             },
         ],
@@ -81,6 +99,7 @@ export const array = [
     },
 
     {
+        id: '20',
         categories: 'О бренде',
         links: [
             {
@@ -103,6 +122,7 @@ export const array = [
     },
 
     {
+        id: '19',
         categories: 'Контакты',
     },
 ];

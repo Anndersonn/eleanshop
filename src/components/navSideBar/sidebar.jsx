@@ -1,36 +1,31 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React, { useState } from 'react';
 import './index.css'
 import { Row, Col, Container, Nav } from 'react-bootstrap';
 import { array } from '../helpers/navSideBar'
-import { useHistory, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
-function Sidebar({ burger }) {
+function Sidebar() {
 
-    const [showNavbar, setShownavbar] = useState({})
+    const [showNavbar, setShownavbar] = useState(false)
 
 
-
-    const toggleComment = index => {
+    const toggleCategory = index => {
         setShownavbar(prevShowNavbar => ({
             ...prevShowNavbar,
             [index]: !prevShowNavbar[index]
         }));
     };
 
-    const history = useHistory()
-
-
-
     return (
-        <div className={!burger ? 'sidebar' : 'sidebar__active'}>
+        <div className='sidebar'>
             <Container className="sidebar__container">
                 <Row>
                     <Nav as={Col} className="flex-column flex-lg-row justify-content-between">
                         {array.map((item, index) =>
-                            <div key={index}>
-                                <Nav.Link onClick={() => toggleComment(index)} className={showNavbar[index] ? "toggle__nav position-relative h3 border-bottom" : "active position-relative h3 border-bottom"}>{item.categories}</Nav.Link>
-                                {item.links && item.links.map((nav, j) => showNavbar[index] ? <Nav.Link onClick={() => history.push(nav.path)} key={j} href={nav.hash}>{nav.link}</Nav.Link> : '')}
+                            <div key={index} className='d-flex flex-column'>
+                                <Nav.Link onClick={() => toggleCategory(index)} className={showNavbar[index] ? "toggle__nav position-relative h3 border-bottom" : "active position-relative h3 border-bottom"}>{item.categories}</Nav.Link>
+                                {item.links && item.links.map((nav, j) => showNavbar[index] ? <Link to={nav.path && nav.path} key={`${nav}_${nav.link}`} href={nav.hash}>{nav.link}</Link> : '')}
                             </div>
                         )}
                     </Nav>
