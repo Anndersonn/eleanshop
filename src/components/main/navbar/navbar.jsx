@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { Navbar, Nav, Container } from 'react-bootstrap'
-import { Cart, Heart, Instagram, Facebook } from 'react-bootstrap-icons'
+import { Navbar, Nav, Container, Image } from 'react-bootstrap'
+import { Cart, Instagram, Facebook } from 'react-bootstrap-icons'
 import './index.css'
 import Sidebar from '../../navSideBar/sidebar'
 import { useHistory, useLocation } from 'react-router-dom'
+import LikeHeart from '../../../img/like.svg';
 
 function Navigation() {
 
@@ -33,7 +34,7 @@ function Navigation() {
                             <Navbar.Brand className="m-auto d-flex align-items-center" onClick={() => history.push('/')}>Elean <p className="mt-2 font-weight-light">ЖЕНСКИЙ <span>СМОКИНГ</span> </p>
                             </Navbar.Brand>
                             <p className="mt-3 d-none d-lg-block font-weight-bold"> +7 (495) 150 - 14 - 77</p>
-                            <button><Heart className="ml-md-5" /></button>
+                            <button><Image src={LikeHeart} className="ml-md-5" /></button>
                             <Nav.Link><Cart className="ml-md-3" /></Nav.Link>
                             <Nav className="nav__wrp w-100 d-none d-lg-flex" >
                                 <Nav.Link className="navigation__links" href="#categories">НОВИНИКИ</Nav.Link>
@@ -61,7 +62,7 @@ function Navigation() {
                             <Navbar.Brand className="m-auto d-flex align-items-center" onClick={() => history.push('/')}>Elean <p className="mt-2 font-weight-light">ЖЕНСКИЙ <span>СМОКИНГ</span> </p>
                             </Navbar.Brand>
                             <p className="mt-3 d-none d-lg-block font-weight-bold"> +7 (495) 150 - 14 - 77</p>
-                            <button><Heart className="ml-md-5" /></button>
+                            <button><Image src={LikeHeart} className="ml-md-5" /></button>
                             <Nav.Link><Cart className="ml-md-3" /></Nav.Link>
                             <Nav className="nav__wrp w-100 d-none d-lg-flex" >
                                 <Nav.Link className="navigation__links" href="#categories">НОВИНИКИ</Nav.Link>
