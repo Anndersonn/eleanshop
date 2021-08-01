@@ -5,3 +5,13 @@
 .secondary__info {
     justify-content: space-between;
 }
+
+
+.pagination__container>li {
+    cursor: pointer;
+
+}
+
+.active {
+    background-color: #dfdcdc;
+}

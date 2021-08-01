@@ -10,8 +10,8 @@ function Comments() {
                     <Image src="#" width={40} height={40} roundedCircle className="bg-dark" />
                     <Col xs={10} className="m-auto">
                         <div className="comments__info d-flex">
-                            <p>Kurwa ebana</p>
-                            <p>mieszka w dupie</p>
+                            <p>Lorem, ipsum.</p>
+                            <p>Lorem, ipsum dolor.</p>
                         </div>
                         <div className="comments__text p-3 w-100">Да, доставка заграницу осуществляется курьерской службой до двери. Доставка заграницу оплачивается при оформлении заказа, фиксированная стоимость 1 200₽.</div>
                     </Col>
@@ -20,8 +20,8 @@ function Comments() {
                     <Image src="#" width={40} height={40} roundedCircle className="bg-dark" />
                     <Col xs={10} className="m-auto">
                         <div className="comments__info d-flex">
-                            <p>Kurwa ebana</p>
-                            <p>mieszka w dupie</p>
+                            <p>Lorem, ipsum.</p>
+                            <p>Lorem, ipsum dolor.</p>
                         </div>
                         <div className="comments__text p-3 w-100">Да, доставка заграницу осуществляется курьерской службой до двери. Доставка заграницу оплачивается при оформлении заказа, фиксированная стоимость 1 200₽.</div>
                     </Col>
@@ -32,8 +32,8 @@ function Comments() {
                     <Image src="#" width={40} height={40} roundedCircle className="bg-dark" />
                     <Col xs={10} className="m-auto">
                         <div className="comments__info d-flex">
-                            <p>Kurwa ebana</p>
-                            <p>mieszka w dupie</p>
+                            <p>Lorem, ipsum.</p>
+                            <p>Lorem, ipsum dolor.</p>
                         </div>
                         <div className="comments__text p-3 w-100">Да, доставка заграницу осуществляется курьерской службой до двери. Доставка заграницу оплачивается при оформлении заказа, фиксированная стоимость 1 200₽.</div>
                     </Col>
@@ -42,8 +42,8 @@ function Comments() {
                     <Image src="#" width={40} height={40} roundedCircle className="bg-dark" />
                     <Col xs={10} className="m-auto">
                         <div className="comments__info d-flex">
-                            <p>Kurwa ebana</p>
-                            <p>mieszka w dupie</p>
+                            <p>Lorem, ipsum.</p>
+                            <p>Lorem, ipsum dolor.</p>
                         </div>
                         <div className="comments__text p-3 w-100">Да, доставка заграницу осуществляется курьерской службой до двери. Доставка заграницу оплачивается при оформлении заказа, фиксированная стоимость 1 200₽.</div>
                     </Col>
