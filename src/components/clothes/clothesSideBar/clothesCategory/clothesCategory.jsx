@@ -111,7 +111,7 @@ function ClothesCategory() {
                                     <div className='info'>
                                         <div className='desc d-flex'>
                                             <p className='font-weight-bold'>/ Классический комплект с смокингом и жилетом</p>
-                                            <Image src={LikeHeart} />
+                                            <Image src={LikeHeart} className='like__active' />
                                         </div>
                                         <div className='secondary__info d-flex'>
                                             <div className="price font-weight-bold">65 300 ₽</div>
@@ -153,7 +153,7 @@ function ClothesCategory() {
 
                 {state.map(({ id }) => {
                     return id < maxPageNumberLimit + 1 && id > minPageNumberLimit ? (
-                        <li className={currentPage === id ? 'active p-2 border m-1 my-5' : 'p-2 border m-1 my-5'} onClick={handlePage} id={id} key={id}>{id}</li>
+                        <li className={currentPage === id ? 'active__pagination p-2 border m-1 my-5' : 'p-2 border m-1 my-5'} onClick={handlePage} id={id} key={id}>{id}</li>
                     ) : null
                 })}
                 <button onClick={handleNext} disabled={currentPage >= state.length - 1 ? true : false}>Next</button>

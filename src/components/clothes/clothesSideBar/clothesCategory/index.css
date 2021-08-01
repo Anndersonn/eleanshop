@@ -12,6 +12,10 @@
 
 }
 
-.active {
+.active__pagination {
     background-color: #dfdcdc;
+}
+
+.like__active {
+    filter: invert(50%) sepia(93%) saturate(1309%) hue-rotate(322deg) brightness(75%) contrast(101%)
 }
