@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Container } from 'react-bootstrap'
-import Navigation from '../../components/main/navbar/navbar'
-import MainPage from '../../components/main/mainPage/mainPage'
+import Navigation from '../../global/navbar/navbar'
+import MainPage from '../../components/main/banner/banner'
 import Categories from '../../components/main/categories/categories'
 import About from '../../components/main/about/about'
 import ShowRoom from '../../components/main/showRoom/showRoom'
@@ -15,26 +15,32 @@ import { sliderData } from '../../components/helpers/imgSlider'
 
 
 
-
 function Main() {
+    
+    const [burger, setBurger] = useState(true)
 
 
     return (
         <>
-            <Navigation />
-            <MainPage sliderImg={sliderData} />
-            <Container>
-                <Categories />
-            </Container>
-            <About />
-            <Container>
-                <ShowRoom />
-                <ContactForm />
-                <Feedback />
-                <Comments />
-                <Socials />
-            </Container>
-            <Footer />
+            <Navigation burger={burger} setBurger={setBurger} />
+            {burger ? 
+                <>
+                    <MainPage sliderImg={sliderData} />
+                    <Container>
+                        <Categories />
+                    </Container>
+                    <About />
+                    <Container>
+                        <ShowRoom />
+                        <ContactForm />
+                        <Feedback />
+                        <Comments />
+                        <Socials />
+                    </Container>
+                    <Footer />
+                </> : ''
+            }
+
         </>
     )
 }

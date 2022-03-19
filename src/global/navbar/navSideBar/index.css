@@ -83,7 +83,7 @@
 @media (max-width: 500px) {
     .toggle__nav::after {
         content: "";
-        background-image: url('../../img/mobileNavbar.svg');
+        background-image: url('../../../img/mobileNavbar.svg');
         background-repeat: no-repeat;
         position: absolute;
         right: 0;
@@ -94,7 +94,7 @@
 
     .active::after {
         content: "";
-        background-image: url('../../img/mobileNavbar.svg');
+        background-image: url('../../../img/mobileNavbar.svg');
         background-repeat: no-repeat;
         position: absolute;
         right: 0;

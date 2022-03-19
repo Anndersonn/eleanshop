@@ -2,16 +2,16 @@ import React from 'react';
 import './index.css'
 import { Row, Container, Navbar, Nav, Col, Form } from 'react-bootstrap';
 import { Instagram, Facebook } from 'react-bootstrap-icons';
+import ContactCredits from './contactCredits/contactCredits';
+import AddressCredits from './addressCredits/addressCredits';
 
 function Footer() {
     return (
-        <Container fluid className="footer__container d-flex flex-lg-row flex-column" id="footer">
+        <Container className="footer__container d-flex flex-lg-row flex-column" id="footer">
             <Row xs={12} className="m-0 px-3">
                 <Col className="px-0">
                     <h2 href="#home">Elean</h2>
-                    <p className=" font-weight-bold"> <span>ТЕЛ.:</span> +7 (495) 150 - 14 - 77</p>
-                    <p className=" font-weight-bold"> <span>WHATSAPP:</span> +7 (977) 728-27-38</p>
-                    <p className=" font-weight-bold"> <span>EMAIL:</span>  info@eleanboutique.ru</p>
+                    <ContactCredits />
                 </Col>
             </Row>
             <Row xs={12} className="m-0 px-3 flex-column">
@@ -26,10 +26,7 @@ function Footer() {
 
                     </Nav>
                 </Navbar>
-                <Col className="d-flex text-center align-items-start flex-xl-row flex-column px-0">
-                    <p className=" font-weight-bold text-left"> <span className="d-block">АДРЕС: </span> г. Москва, Новая площадь 8, стр.2, 5 этаж</p>
-                    <p className="pl-xl-5 pl-0 font-weight-bold text-left"> <span className="d-block">АДРЕС: </span> г. Москва, Новая площадь 8, стр.2, 5 этаж</p>
-                </Col>
+                <AddressCredits />
                 <Col className="d-flex px-0">
                     <Nav.Link className="m-2 ml-3  d-md-flex" href="#home"><Instagram /></Nav.Link>
                     <Nav.Link className="m-2  d-md-flex" href="#home"><Facebook /></Nav.Link>

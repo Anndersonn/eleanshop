@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './index.css'
 import { Row, Col, Container, Nav } from 'react-bootstrap';
-import { array } from '../helpers/navSideBar'
+import { array } from '../../../components/helpers/navSideBar'
 import { Link } from 'react-router-dom';
 
 

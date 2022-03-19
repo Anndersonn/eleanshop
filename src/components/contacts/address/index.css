@@ -1,0 +1,35 @@
+.contact__page-address p {
+    font-weight: 400 !important;
+}
+
+.contact__page-address p span {
+    margin-left: 33px;
+}
+
+.contact__page-address .font-weight-bold {
+    position: relative;
+}
+
+.contact__page-address .email::before,
+.contact__page-address .phone::before,
+.contact__page-address .whatsapp::before {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+}
+
+.contact__page-address .email::before {
+    background: url('../../../img/mail.svg');
+    background-repeat: no-repeat;
+}
+
+.contact__page-address .phone::before {
+    background: url('../../../img/phone.svg');
+    background-repeat: no-repeat;
+}
+
+.contact__page-address .whatsapp::before {
+    background: url('../../../img/call.svg');
+    background-repeat: no-repeat;
+}

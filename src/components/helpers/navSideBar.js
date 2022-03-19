@@ -124,5 +124,11 @@ export const array = [
     {
         id: '19',
         categories: 'Контакты',
+        links: [
+            {
+                link: 'Контакты',
+                path: '/contacts'
+            }
+        ]
     },
 ];

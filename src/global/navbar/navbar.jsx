@@ -1,27 +1,28 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { Navbar, Nav, Container, Image } from 'react-bootstrap'
 import { Cart, Instagram, Facebook } from 'react-bootstrap-icons'
 import './index.css'
-import Sidebar from '../../navSideBar/sidebar'
+import Sidebar from './navSideBar/sidebar'
 import { useHistory, useLocation } from 'react-router-dom'
-import LikeHeart from '../../../img/like.svg';
+import LikeHeart from '../../img/like.svg';
 
-function Navigation() {
+function Navigation({ burger, setBurger }) {
+
+    console.log(setBurger)
 
 
-    const [burger, setBurger] = useState(true)
     const history = useHistory()
     const location = useLocation()
     useEffect(() => {
         return !burger ? setBurger(!burger) : setBurger(burger)
     }, [location.pathname])
+
     return (
         <Container>
             {
                 !burger ? (
                     <>
                         <Sidebar />
-
                         <Navbar expand="false" className={!burger ? "color__switch" : ""}>
 
                             <button onClick={() => setBurger(!burger)} className={burger ? "burger px-0" : "burger close"}>
@@ -59,8 +60,8 @@ function Navigation() {
                             </button>
                             <Nav.Link className="m-2 ml-3 d-none d-md-flex" href="#home"><Instagram /></Nav.Link>
                             <Nav.Link className="m-2 d-none d-md-flex" href="#home"><Facebook /></Nav.Link>
-                            <Navbar.Brand className="m-auto d-flex align-items-center" onClick={() => history.push('/')}>Elean <p className="mt-2 font-weight-light">ЖЕНСКИЙ <span>СМОКИНГ</span> </p>
-                            </Navbar.Brand>
+                            <Nav.Link className="m-auto d-flex align-items-center navbar-brand" onClick={() => history.push('/')}>Elean <p className="mt-2 font-weight-light">ЖЕНСКИЙ <span>СМОКИНГ</span> </p>
+                            </Nav.Link>
                             <p className="mt-3 d-none d-lg-block font-weight-bold"> +7 (495) 150 - 14 - 77</p>
                             <button><Image src={LikeHeart} className="ml-md-5" /></button>
                             <Nav.Link><Cart className="ml-md-3" /></Nav.Link>

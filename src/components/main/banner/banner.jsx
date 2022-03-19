@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './index.css'
 
-function MainPage({ sliderImg, autoPlayTime = 15000 }) {
+function Banner({ sliderImg, autoPlayTime = 15000 }) {
 
     const [currentSlide, setCurrentSlide] = useState(0)
 
@@ -40,4 +40,4 @@ function MainPage({ sliderImg, autoPlayTime = 15000 }) {
     );
 }
 
-export default MainPage;
+export default Banner;
