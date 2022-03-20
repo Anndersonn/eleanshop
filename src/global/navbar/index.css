@@ -31,6 +31,31 @@ button {
 }
 
 /* NAVBAR */
+.navbar {
+    border-bottom: 1px solid #E3E4E4;
+    position: relative;
+}
+
+.navbar::before {
+    content: '';
+    position: absolute;
+    width: 248px;
+    height: 1px;
+    border-bottom: 1px solid #E3E4E4;
+    bottom: -1px;
+    left: 100%;
+}
+
+.navbar::after {
+    content: '';
+    position: absolute;
+    width: 248px;
+    height: 1px;
+    border-bottom: 1px solid #E3E4E4;
+    bottom: -1px;
+    right: 100%;
+}
+
 .navbar>.navbar-nav {
     flex-direction: unset;
     justify-content: space-evenly;

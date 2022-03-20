@@ -104,7 +104,8 @@ export const array = [
         links: [
             {
                 link: 'Шоурум',
-                hash: '#showroom'
+                hash: '#showroom',
+                path: '/showroom'
             },
             {
                 link: 'Отзывы',

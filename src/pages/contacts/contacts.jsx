@@ -16,15 +16,19 @@ function Contacts() {
             <div className='text-center my-5'>
                 <h3>Контакты</h3>
             </div>
-            <Container className='d-flex'>
-                <Col xs={6}>
-                    <Map />
-                </Col>
-                <Col xs={6}>
-                    <Address />
-                </Col>
-            </Container>
-            <Footer />
+            {burger ?
+                <>
+                    <Container className='contacts__container d-flex mb-5'>
+                        <Col xs={6}>
+                            <Map />
+                        </Col>
+                        <Col xs={6}>
+                            <Address />
+                        </Col>
+                    </Container>
+                    <Footer />
+                </>
+                : ''}
         </>
     );
 }

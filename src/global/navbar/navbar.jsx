@@ -1,15 +1,12 @@
 import React, { useEffect } from 'react'
 import { Navbar, Nav, Container, Image } from 'react-bootstrap'
 import { Cart, Instagram, Facebook } from 'react-bootstrap-icons'
-import './index.css'
 import Sidebar from './navSideBar/sidebar'
 import { useHistory, useLocation } from 'react-router-dom'
 import LikeHeart from '../../img/like.svg';
+import './index.css'
 
 function Navigation({ burger, setBurger }) {
-
-    console.log(setBurger)
-
 
     const history = useHistory()
     const location = useLocation()

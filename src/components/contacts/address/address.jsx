@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import FirmId from "../../../pages/contacts/firmId/firmId";
+import FirmId from "./firmId/firmId";
 import AddressCredits from "../../main/footer/addressCredits/addressCredits";
 import ContactCredits from "../../main/footer/contactCredits/contactCredits";
 import ContactForm from "../../main/form/form";
@@ -20,7 +20,7 @@ function Address() {
                     <FirmId />
                 </Col>
             </Row>
-            <h3>АДРЕС И РЕЖИМ РАБОТЫ</h3>
+            <h3 className="working__info-subtitle">АДРЕС И РЕЖИМ РАБОТЫ</h3>
             <AddressCredits />
             <ContactForm />
         </>

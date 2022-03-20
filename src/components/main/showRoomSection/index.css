@@ -2,3 +2,7 @@
     display: inline;
     border-bottom: 2px solid #D7B494;
 }
+
+.showroom__page #showroom {
+    margin-top: 80px;
+}

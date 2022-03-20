@@ -3,7 +3,7 @@ import { Image, Col, Row } from 'react-bootstrap';
 import photoRoom from '../../../img/showroom1.png'
 import './index.css'
 
-function ShowRoom() {
+function ShowRoomSection() {
     return (
         <>
             <div className="text-center mb-5" id='showroom'>
@@ -18,4 +18,4 @@ function ShowRoom() {
     );
 }
 
-export default ShowRoom;
+export default ShowRoomSection;

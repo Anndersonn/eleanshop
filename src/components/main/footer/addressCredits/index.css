@@ -1,0 +1,38 @@
+.contacts__container .working__process-info.d-flex {
+    flex-direction: column !important;
+}
+
+.contacts__container .working__process-info.d-flex p {
+    padding-left: 0 !important;
+    font-weight: 400 !important;
+}
+
+.contacts__container .working__process-info.d-flex p {
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.contacts__container .working__process-info.d-flex p span {
+    margin-left: 33px;
+    margin-right: 10px;
+}
+
+
+.contacts__container .working__process-info .address::before,
+.contacts__container .working__process-info .working-time::before {
+    content: '';
+    position: absolute;
+    width: 23px;
+    height: 23px;
+}
+
+.contacts__container .working__process-info .working-time::before {
+    background: url('../../../../img/clock.svg');
+    background-repeat: no-repeat;
+}
+
+.contacts__container .working__process-info .address::before {
+    background: url('../../../../img/compass.svg');
+    background-repeat: no-repeat;
+}

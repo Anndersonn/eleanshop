@@ -12,13 +12,13 @@
 }
 
 .firm__info.cto::before {
-    background: url('../../../img/doc.svg');
+    background: url('../../../../img/doc.svg');
     background-repeat: no-repeat;
 
 }
 
 .firm__info.id::before {
-    background: url('../../../img/notifications.svg');
+    background: url('../../../../img/notifications.svg');
     background-repeat: no-repeat;
     left: -17px;
 }

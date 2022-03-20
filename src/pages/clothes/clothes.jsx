@@ -19,16 +19,16 @@ function Clothes() {
             <div className='text-center my-5'>
                 <h3>{id}</h3>
             </div>
-            {burger ? 
-            <Row xs={12}>
+            {burger ?
+                <Row xs={12}>
 
-                <Col xs={2} className='flex-nowrap'>
-                    <ClothesSideBar />
-                </Col>
-                <Col className='mb-5' xs={10}>
-                    <ClothesCategory />
-                </Col>
-            </Row>
+                    <Col xs={2} className='flex-nowrap'>
+                        <ClothesSideBar />
+                    </Col>
+                    <Col className='mb-5' xs={10}>
+                        <ClothesCategory />
+                    </Col>
+                </Row>
                 : ''}
             <Footer />
         </Container>
