@@ -109,15 +109,15 @@ export const array = [
             },
             {
                 link: 'Отзывы',
-                hash: '#comments'
+                hash: '#comments',
             },
             {
                 link: 'Статьи',
-                hash: '#blog'
+                hash: '#blog',
             },
             {
                 link: 'Блог',
-                hash: '#blog'
+                hash: '#blog',
             },
         ],
     },

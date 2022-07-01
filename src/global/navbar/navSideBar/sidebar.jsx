@@ -25,7 +25,7 @@ function Sidebar() {
                         {array.map((item, index) =>
                             <div key={index} className='d-flex flex-column align-items-start'>
                                 <button onClick={() => toggleCategory(index)} className={showNavbar[index] ? "toggle__nav position-relative h3 border-bottom p-0 pb-3" : "active position-relative h3 border-bottom p-0 pb-3"}>{item.categories}</button>
-                                {item.links && item.links.map((nav, j) => showNavbar[index] ? <Link to={nav.path && nav.path} key={`${nav}_${nav.link}`} href={nav.hash}>{nav.link}</Link> : '')}
+                                {item.links && item.links.map((nav, j) => showNavbar[index] ? <Link to={nav.path ? nav.path : ''} key={`${nav}_${nav.link}`} href={nav.hash}>{nav.link}</Link> : '')}
                             </div>
                         )}
                     </Nav>
