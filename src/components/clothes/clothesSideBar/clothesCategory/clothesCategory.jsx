@@ -5,6 +5,7 @@ import Categories2 from '../../../../img/categories2.png';
 import LikeHeart from '../../../../img/like.svg';
 import './index.css'
 import axios from 'axios';
+import { useSelector } from 'react-redux';
 
 
 
@@ -19,6 +20,9 @@ function ClothesCategory() {
     const [pageNumberLimit, setPageNumberLimit] = useState(4)
     const [maxPageNumberLimit, setmaxPageNumberLimit] = useState(4);
     const [minPageNumberLimit, setminPageNumberLimit] = useState(0);
+
+    const products = useSelector(state => state)
+    console.log(products)
 
 
 
