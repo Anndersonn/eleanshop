@@ -1,0 +1,24 @@
+.firm__info.cto {
+    position: relative;
+}
+
+.firm__info.id::before,
+.firm__info.cto::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: -30px;
+}
+
+.firm__info.cto::before {
+    background: url('../../../../../assets/img/doc.svg');
+    background-repeat: no-repeat;
+
+}
+
+.firm__info.id::before {
+    background: url('../../../../../assets/img/notifications.svg');
+    background-repeat: no-repeat;
+    left: -17px;
+}

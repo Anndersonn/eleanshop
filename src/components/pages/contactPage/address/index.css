@@ -1,0 +1,66 @@
+.contact__page-address p {
+    font-weight: 400 !important;
+}
+
+.contact__page-address p span {
+    margin-left: 33px;
+}
+
+.contact__page-address .font-weight-bold {
+    position: relative;
+}
+
+.contact__page-address .email::before,
+.contact__page-address .phone::before,
+.contact__page-address .whatsapp::before {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+}
+
+.contact__page-address .email::before {
+    background: url('../../../../assets/img/mail.svg');
+    background-repeat: no-repeat;
+}
+
+.contact__page-address .phone::before {
+    background: url('../../../../assets/img/phone.svg');
+    background-repeat: no-repeat;
+}
+
+.contact__page-address .whatsapp::before {
+    background: url('../../../../assets/img/call.svg');
+    background-repeat: no-repeat;
+}
+
+.contacts__container .working__info-subtitle {
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.contacts__container #contactform {
+    padding: 0 !important;
+    border: none;
+    margin-top: 3rem;
+    margin-bottom: 0 !important;
+}
+
+.contacts__container #contactform img {
+    display: none;
+}
+
+.contacts__container #contactform .form-title {
+    position: relative;
+}
+
+.contacts__container #contactform .form-title::after {
+    content: '';
+    position: absolute;
+    background: url('../../../../assets/img/formIcon.svg');
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 50px;
+    right: 0;
+}

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import Address from '../../components/contacts/address/address';
-import Map from '../../components/contacts/map/googleMap';
-import Footer from '../../components/main/footer/footer';
-import Navigation from '../../global/navbar/navbar';
+import Address from '../../components/pages/contactPage/address/address';
+import Map from '../../components/pages/contactPage/map/googleMap';
+import Footer from '../../components/global/footer/footer';
+import Navigation from '../../components/global/header/header';
 
 
 function Contacts() {

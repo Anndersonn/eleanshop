@@ -1,9 +1,9 @@
 import './index.css';
-import Main from './pages/main/main';
-import Clothes from './pages/clothes/clothes';
+import Clothes from './pages/listing/listing';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Contacts from './pages/contacts/contacts';
-import ShowRoom from './pages/brand/brand';
+import ShowRoom from './pages/showroom/showroom';
+import Main from './pages/main/main';
 
 function App() {
   return (

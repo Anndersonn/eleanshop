@@ -1,0 +1,48 @@
+.about__photo {
+    width: 100%;
+
+}
+
+.vector {
+    overflow: hidden;
+    height: 100%;
+    left: -5%;
+    top: -10%;
+    width: 30%;
+    max-width: 100%;
+}
+
+.vector2 {
+    overflow: hidden;
+    right: -15%;
+    top: 7%;
+    height: 100%;
+    width: 30%;
+    max-width: 100%;
+}
+
+.row {
+    overflow: hidden;
+}
+
+.text-card {
+    font-size: 0.8rem;
+}
+
+.about__btn {
+    position: relative;
+    color: #C0C0C0;
+}
+
+.about__btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -40%;
+    background: url('../../../assets/img/right.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 5px;
+}
