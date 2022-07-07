@@ -31,12 +31,12 @@ button {
 }
 
 /* NAVBAR */
-.navbar {
+.navbar-expand-false.navbar {
     border-bottom: 1px solid #E3E4E4;
     position: relative;
 }
 
-.navbar::before {
+.navbar-expand-false.navbar::before {
     content: '';
     position: absolute;
     width: 248px;
@@ -46,7 +46,7 @@ button {
     left: 100%;
 }
 
-.navbar::after {
+.navbar-expand-false.navbar::after {
     content: '';
     position: absolute;
     width: 248px;

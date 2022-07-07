@@ -13,8 +13,6 @@ import SocialIconLinks from '../../common/socialIconLinks/socialIconLinks'
 function Navigation() {
 
 
-    // TODO: розбити на компоненти хедер
-
     const location = useLocation()
 
     const { burger, setBurger } = useContext(navigationContext)
