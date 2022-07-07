@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Address from '../../components/pages/contactPage/address/address';
 import Map from '../../components/pages/contactPage/map/googleMap';
 import Footer from '../../components/global/footer/footer';
 import Navigation from '../../components/global/header/header';
+import { navigationContext } from '../../context/navigationContext';
 
 
 function Contacts() {
 
-    const [burger, setBurger] = useState(true)
-
+    const { burger } = useContext(navigationContext)
     return (
         <>
-            <Navigation burger={burger} setBurger={setBurger} />
+            <Navigation />
             <div className='text-center my-5'>
                 <h3>Контакты</h3>
             </div>

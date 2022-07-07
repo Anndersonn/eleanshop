@@ -8,7 +8,7 @@ import ShowRoomSection from '../../components/common/showroom/showroom'
 import ContactForm from '../../components/common/form/form'
 import Feedback from '../../components/common/feedback/feedback'
 import Comments from '../../components/common/comments/comments'
-import Socials from '../../components/global/socials/socials'
+import Socials from '../../components/common/socials/socials'
 import Footer from '../../components/global/footer/footer'
 import { sliderData } from '../../helpers/json/imgSlider'
 
