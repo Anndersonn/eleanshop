@@ -6,7 +6,8 @@ import ShowRoom from './pages/showroom/showroom';
 import Main from './pages/main/main';
 import {navigationContext} from './context/navigationContext'
 import { useState } from 'react';
-import ProductPage from './components/pages/productPage/productPage';
+import ProductPage from './pages/productPage/productPage';
+import Brand from './pages/brand/brand';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path='/product/:productId' component={ProductPage} />
           <Route path='/contacts' component={Contacts} />
           <Route path='/showroom' component={ShowRoom} />
+          <Route path='/brand' component={Brand} />
         </navigationContext.Provider>
       </Switch>
     </Router>

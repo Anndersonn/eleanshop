@@ -118,6 +118,7 @@ export const array = [
             {
                 link: 'Блог',
                 hash: '#blog',
+                path: '/brand'
             },
         ],
     },
