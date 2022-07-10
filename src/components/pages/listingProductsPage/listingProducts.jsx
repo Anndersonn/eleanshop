@@ -17,6 +17,7 @@ import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 import Loader from '../../../loader/skeletonLoader';
 import SideLoader from '../../../loader/skeletonLoaderSideProducts';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 function ListingProducts() {
 
@@ -42,6 +43,8 @@ function ListingProducts() {
         }
     });
 
+    console.log(products)
+
     useEffect(() => {
         dispatch(setLoaded(false))
         axios.get(`https://jsonplaceholder.typicode.com/photos?_page=${currentPage}&max_limit=${pageSize}`).then((response) => {
@@ -60,7 +63,9 @@ function ListingProducts() {
                                     <Image className='w-100' rounded fluid src={item.url} />
                                     <div className='info'>
                                         <div className='desc d-flex '>
-                                            <p className="font-weight-bold">/ Классический комплект с смокингом и жилетом</p>
+                                            <Link to={`/product/${item.id}`}>
+                                                <p className="font-weight-bold">/ Классический комплект с смокингом и жилетом</p>
+                                            </Link>
                                             <Image src={LikeHeart} />
                                         </div>
                                         <div className='secondary__info d-flex '>

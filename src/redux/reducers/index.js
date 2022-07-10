@@ -1,9 +1,10 @@
 import { combineReducers } from 'redux';
 import paginationReducer from './paginationReducer';
-import { productReducer } from './productReducer';
+import { pageProductReducer, productReducer } from './productReducer';
 
 const reducers = combineReducers({
     allProducts: productReducer,
+    currentProduct: pageProductReducer,
     page: paginationReducer,
 })
 
