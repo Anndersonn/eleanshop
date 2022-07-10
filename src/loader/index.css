@@ -1,0 +1,8 @@
+.card-skeleton {
+    width: 250px;
+}
+
+.card-main__info {
+    display: flex;
+    justify-content: space-between;
+}

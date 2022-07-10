@@ -6,12 +6,17 @@ import './index.css'
 import axios from 'axios';
 import { useSelector } from 'react-redux';
 
-import { setProduct } from '../../../redux/actions/productActions';
+import { setLoaded, setProduct } from '../../../redux/actions/productActions';
 import { useDispatch } from 'react-redux';
 
 import { setPage } from '../../../redux/actions/pagination';
 
 
+
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
+import Loader from '../../../loader/skeletonLoader';
+import SideLoader from '../../../loader/skeletonLoaderSideProducts';
 
 function ListingProducts() {
 
@@ -31,7 +36,14 @@ function ListingProducts() {
         pages.push(i)
     }
 
+    const { isLoaded } = useSelector(state => {
+        return {
+            isLoaded: state.allProducts.isLoaded,
+        }
+    });
+
     useEffect(() => {
+        dispatch(setLoaded(false))
         axios.get(`https://jsonplaceholder.typicode.com/photos?_page=${currentPage}&max_limit=${pageSize}`).then((response) => {
             dispatch(setProduct(response.data))
         })
@@ -42,7 +54,7 @@ function ListingProducts() {
             <Container>
                 <Container className='d-flex m-0 p-0'>
                     <Row xs={6} style={{ height: 'fit-content' }} className='pr-3 m-0'>
-                        {products && products.map(item => {
+                        {isLoaded ? products && products.map(item => {
                             return (
                                 <Col className=' h-100 py-3 pl-5' md={4} >
                                     <Image className='w-100' rounded fluid src={item.url} />
@@ -58,10 +70,10 @@ function ListingProducts() {
                                     </div>
                                 </Col>
                             )
-                        })}
+                        }) : Array(10).fill(0).map((_, index) => <Col className=' h-100 py-3 pl-5' md={4} ><SkeletonTheme baseColor="#202020" highlightColor="#444"><Loader /></SkeletonTheme></Col>)}
                     </Row>
-                    <Row xs={2} className=' m-0 pr-3' style={{ width: 'inherit' }}>
-                        {products && products.slice(0, 2).map(item => {
+                    <Row xs={2} className=' m-0 pr-3' >
+                        {isLoaded ? products && products.slice(0, 2).map(item => {
                             return (
                                 <Col md={12} className='d-flex flex-column p-0 py-3'>
 
@@ -78,7 +90,7 @@ function ListingProducts() {
                                     </div>
                                 </Col>
                             )
-                        })}
+                        }) : Array(2).fill(0).map((_, index) => <Col className=' h-100 py-3 pl-5' md={4} ><SideLoader /></Col>)}
                     </Row>
                 </Container >
             </Container>
